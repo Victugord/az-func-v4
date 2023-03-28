@@ -1,0 +1,21 @@
+{
+  "name": "azfuncs",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "tsup",
+    "watch": "tsup --watch",
+    "prestart": "npm run build",
+    "start": "func start --javascript",
+    "test": "echo \"No tests yet...\""
+  },
+  "dependencies": {
+    "@azure/functions": "^4.0.0-alpha.7",
+    "tsup": "^6.7.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.x",
+    "typescript": "^5.0.2"
+  },
+  "main": "dist/functions/**/*.js"
+}
